@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BigSam | Graphic Designer & IT Expert</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="main.js" defer></script>
 </head>
 
 <body>
+
+       <!-- LIGHTBOX (hidden until clicked) -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Preview">
+    </div>
+
 
     <!-- HEADER -->
 <header class="header">
@@ -19,10 +28,11 @@
     </div>
 
     <!-- HAMBURGER -->
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
-
+ <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+ </div>
     <nav class="navigate" id="nav-menu">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -58,7 +68,6 @@
         and secure digital solutions.
     </p>
 </section>
-
 <!-- SERVICES SECTION -->
 <section class="section service fade-in" id="services">
     <h2>My Services</h2>
@@ -66,41 +75,83 @@
     <div class="service-grid">
         <div class="service-box">
             <h3>🎨 Graphic Design</h3>
-            <p>Brand identity, flyers, logos, and visual designs that attract and convert.</p>
+            <p>
+                I create professional visual designs that help brands stand out,
+                attract attention, and communicate clearly.
+            </p>
         </div>
 
         <div class="service-box">
             <h3>💻 Web Development</h3>
-            <p>Fast, responsive, and modern websistes built with clean code.</p>
+            <p>
+                I build clean, responsive, and user-friendly websites optimized
+                for performance and usability.
+            </p>
         </div>
 
         <div class="service-box">
             <h3>🛡️ Cyber Security</h3>
-            <p>Basic security audits, system hardening, and IT risk awareness.</p>
+            <p>
+                I help individuals and small businesses improve system security,
+                reduce risks, and understand basic cyber threats.
+            </p>
         </div>
     </div>
 </section>
-    <!-- PORTFOLIO -->
-   <section class="section fade-in" id="portfolio">
+<!-- PORTFOLIO SECTION -->
+<section class="section fade-in" id="portfolio">
     <h2>Portfolio</h2>
 
+    <!-- GRAPHIC DESIGN -->
+    <h3 class="portfolio-title">🎨 Graphic Design</h3>
     <div class="portfolio-grid">
         <div class="portfolio-card">
-            <h3>Brand Design</h3>
-            <p>Logos, banners & social media designs.</p>
-        </div>
-
-        <div class="portfolio-card">
-            <h3>Website Projects</h3>
-            <p>Responsive business and personal websites.</p>
-        </div>
-
-        <div class="portfolio-card">
-            <h3>IT & Security</h3>
-            <p>System setups, audits & tech support.</p>
+            <p>
+                Selected design works including logos, flyers,
+                social media creatives, and brand visuals.
+            </p>
+            <div class="portfolio-buttons">
+                <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">
+                    View Designs
+                </a>
+            </div>
         </div>
     </div>
-    
+
+    <!-- WEB DEVELOPMENT -->
+    <h3 class="portfolio-title">💻 Web Development</h3>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <p>
+                Website projects built for personal brands,
+                small businesses, and online presence.
+            </p>
+            <div class="portfolio-buttons">
+                <a href="https://github.com/psalmskiddy" target="_blank">
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- IT & CYBER SECURITY -->
+    <h3 class="portfolio-title">🛡️ IT & Cyber Security</h3>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <p>
+                Practical IT support work, system setups,
+                troubleshooting, and basic security tasks.
+            </p>
+            <div class="portfolio-buttons">
+                <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </section>
 <section class="section fade-in" id="why-me">
     <h2>Why Choose BigSam</h2>
